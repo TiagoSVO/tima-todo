@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.e12c6c90.css",
-    "main.js": "/react-gh-pages/static/js/main.c5b48f98.js",
-    "static/js/787.9c7ff424.chunk.js": "/react-gh-pages/static/js/787.9c7ff424.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.e12c6c90.css.map": "/react-gh-pages/static/css/main.e12c6c90.css.map",
-    "main.c5b48f98.js.map": "/react-gh-pages/static/js/main.c5b48f98.js.map",
-    "787.9c7ff424.chunk.js.map": "/react-gh-pages/static/js/787.9c7ff424.chunk.js.map"
+    "main.css": "/tima-todo/static/css/main.e12c6c90.css",
+    "main.js": "/tima-todo/static/js/main.b7ad2d1d.js",
+    "static/js/787.9c7ff424.chunk.js": "/tima-todo/static/js/787.9c7ff424.chunk.js",
+    "index.html": "/tima-todo/index.html",
+    "main.e12c6c90.css.map": "/tima-todo/static/css/main.e12c6c90.css.map",
+    "main.b7ad2d1d.js.map": "/tima-todo/static/js/main.b7ad2d1d.js.map",
+    "787.9c7ff424.chunk.js.map": "/tima-todo/static/js/787.9c7ff424.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e12c6c90.css",
-    "static/js/main.c5b48f98.js"
+    "static/js/main.b7ad2d1d.js"
   ]
 }
