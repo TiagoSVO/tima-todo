@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    box-sizing: border-box;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
@@ -16,6 +15,7 @@ export const Header = styled.header`
 `
 
 export const Main = styled.main`
+    background-color: ${(props) => props.theme.colors.main};
     grid-area: main;
     border: 1px solid green;
 `
