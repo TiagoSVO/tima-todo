@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import Todo from './Todo/Todo'
+import MainPage from './pages/main/MainPage'
 
 const App = () => {
-  return <Todo />
+  return <MainPage />
 }
 
 export default App;

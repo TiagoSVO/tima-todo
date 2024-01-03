@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Todo.scss';
 
 import InputTodoAdd from './InputTodoAdd';
 import TodoList from './TodoList';
