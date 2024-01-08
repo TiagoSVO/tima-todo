@@ -15,19 +15,19 @@ const myTheme = {
     borderRadius: '5px',
 
     colors: {
-      main: '#2f9e41',
-      darkMain: '#28732A',
-      secondary: '#cd191e',
-      darkSecondary: '#aa1315',
+      main: '#653780',
+      darkMain: '#3F1651',
+      secondary: '#E537F1',
+      darkSecondary: '#9C3587',
       background: '#fefefe',
       default: '#fafafa',
       darkDefault: '#dddddd',
-      info: '#346ACC',
+      info: '#F89F5B',
       darkInfo: '#254d95',
       warning: '#FFC70D',
       darkWarning: '#e2ad00',
-      black: '#777777',
-      darkBlack: '#333333'
+      black: '#333333',
+      darkBlack: '#000000'
     },
 
     sizes: {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import InputTodoEdit from './InputTodoEdit'
+import InputTodoEdit from '../InputTodoEdit/InputTodoEdit'
 
 const TodoList = ({todoList, onClickItemTodoListToggleDone, deleteItemFromTodoList, editItemTitleFromTodoList}) => {
   return (

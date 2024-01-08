@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import InputTodoAdd from './InputTodoAdd';
-import TodoList from './TodoList';
+import InputTodoAdd from '../InputTodoAdd/InputTodoAdd';
+import TodoList from '../TodoList/TodoList';
 
 const Todo = () => {
 

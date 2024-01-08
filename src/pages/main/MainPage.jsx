@@ -1,11 +1,23 @@
 import React from "react";
-import { Container, Header, Main, Footer } from './MainStyles'
+import { Container, Header, Main, Footer, Hero, Nav, Content, HeroInner } from './MainStyles'
+import Todo from "../../components/Todo/Todo";
 
 function MainPage() {
     return(
         <Container>
-            <Header></Header>
-            <Main></Main>
+            <Header>
+                <Nav>
+                    
+                </Nav>
+                <Hero>
+                    <HeroInner>
+                        <Content><h1>To Do</h1></Content>
+                    </HeroInner>
+                </Hero>
+            </Header>
+            <Main>
+                <Todo />
+            </Main>
             <Footer></Footer>
         </Container>
     )

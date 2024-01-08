@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import  { SectionInputAdd } from './InputTodoAddStyles'
 
 const InputTodoAdd = (props) => {
   const initialInputTodoAdd = ''
@@ -33,13 +34,13 @@ const InputTodoAdd = (props) => {
   }
 
   return(
-    <section className="tt-input-todo">
+    <SectionInputAdd className="tt-input-todo">
       <div className="tt-wrap-input-button-add">
         <input value={inputTodoAdd} onKeyDown={onEnterInputTodoAdd} onChange={onChangeInputTodoAdd} placeholder="New Task..."/>
         <button onClick={onClickButtonTodoAdd}>+</button>
       </div>
       <button className="tt-clear-button" onClick={onClickClearList}>Clear ToDo</button>
-    </section>
+    </SectionInputAdd>
   )
 }
 
