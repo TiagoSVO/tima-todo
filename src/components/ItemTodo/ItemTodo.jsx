@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaTrashAlt, FaEdit, FaCheck } from 'react-icons/fa';
+import { FiEdit2, FiTrash2 } from "react-icons/fi";
+import { Container, ButtonsGroup, Button, LabelItem } from './ItemTodoStyles'
 
 const InputTodoEdit = ({item, editItemTitleFromTodoList, onClickItemTodoListToggleDone, deleteItemFromTodoList}) => {
   const [inputTodoEdit, setInputTodoEdit] = useState(item.title)
@@ -20,35 +22,32 @@ const InputTodoEdit = ({item, editItemTitleFromTodoList, onClickItemTodoListTogg
   }
 
   return (
-    <>
-
+    <Container>
       {onEdit ?
-        <div className="tt-wrap-input-button-edit">
+        <LabelItem className="tt-wrap-input-button-edit">
           <input type="text" value={inputTodoEdit} onChange={(e) => onChangeInputTodoEdit(e)}/>
           <button className="tt-btn-ok-edit"
                   type="button" onClick={(e) => onClickButtonTodoEdit(item, e)}>
                   <FaCheck size={24} />
           </button>
-        </div>
+        </LabelItem>
         :
-        <div>
+        <LabelItem>
           <span
             onClick={(e) => {onClickItemTodoListToggleDone(item, e)}}>
               {item.title}
           </span>
-        </div>
+        </LabelItem>
       }
-      <div className="tt-wrap-item-actions">
-        <button className={onEdit ? "tt-btn tt-btn-default tt-button-edit" : '' }
-          onClick={() => toggleInputEditAndSpan()}>
-            {onEdit ? 'Cancel' : <FaEdit size={24} />}
-        </button>
-        <button
-          onClick={() => deleteItemFromTodoList(item)}>
-            <FaTrashAlt size={24} />
-        </button>
-      </div>
-    </>
+      <ButtonsGroup>
+        <Button styleType='Edit' className={onEdit ? 'editing' : ''} onClick={() => toggleInputEditAndSpan()}>
+            {onEdit ? 'Cancel' : <FiEdit2 size={20} />}
+        </Button>
+        <Button styleType='Delete' onClick={() => deleteItemFromTodoList(item)}>
+            <FiTrash2 size={20} />
+        </Button>
+      </ButtonsGroup>
+    </Container>
   )
 }
 

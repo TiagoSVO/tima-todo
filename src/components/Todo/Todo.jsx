@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { TodoContainer, TodoContainerHeader, TodoContainerContent, TodoContainerFooter } from './TodoStyles';
+
 import InputTodoAdd from '../InputTodoAdd/InputTodoAdd';
 import TodoList from '../TodoList/TodoList';
 
@@ -66,18 +68,17 @@ const Todo = () => {
   }
 
   return (
-    <div className="tt-wrap">
-      <header className="tt-header">
-        <h1 className="tt-h1">Tima ToDo</h1>
-      </header>
-      <main className="tt-main">
+    <TodoContainer>
+      <TodoContainerHeader>
+        <h3>Title</h3>
+        <span>10/03/2024</span>
         <InputTodoAdd addItemToTodoList={addItemToTodoList} onClickClearList={onClickClearList}/>
+      </TodoContainerHeader>
+      <TodoContainerContent>
+        
         <TodoList  todoList={todoList} onClickItemTodoListToggleDone={onClickItemTodoListToggleDone} deleteItemFromTodoList={deleteItemFromTodoList} editItemTitleFromTodoList={editItemTitleFromTodoList}/>
-      </main>
-      <footer className="tt-footer">
-        <span>Developed by tiago.svo.dev</span>
-      </footer>
-    </div>
+      </TodoContainerContent>
+    </TodoContainer>
   );
 }
 

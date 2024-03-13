@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Header, Main, Footer, Hero, Nav, Content, HeroInner } from './MainStyles'
+import { Container, Header, Main, Footer, Nav } from './MainStyles'
 import Todo from "../../components/Todo/Todo";
 
 function MainPage() {
@@ -7,13 +7,8 @@ function MainPage() {
         <Container>
             <Header>
                 <Nav>
-                    
+                    <h1>TiMa - ToDo</h1>
                 </Nav>
-                <Hero>
-                    <HeroInner>
-                        <Content><h1>To Do</h1></Content>
-                    </HeroInner>
-                </Hero>
             </Header>
             <Main>
                 <Todo />
