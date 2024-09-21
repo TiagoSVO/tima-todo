@@ -78,6 +78,7 @@ const Todo = () => {
         
         <TodoList  todoList={todoList} onClickItemTodoListToggleDone={onClickItemTodoListToggleDone} deleteItemFromTodoList={deleteItemFromTodoList} editItemTitleFromTodoList={editItemTitleFromTodoList}/>
       </TodoContainerContent>
+      <TodoContainerFooter />
     </TodoContainer>
   );
 }

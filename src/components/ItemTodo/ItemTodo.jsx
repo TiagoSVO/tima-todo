@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FaTrashAlt, FaEdit, FaCheck } from 'react-icons/fa';
-import { FiEdit2, FiTrash2 } from "react-icons/fi";
+import { FiEdit2, FiTrash2, FiCheck , FiSquare, FiCheckSquare } from "react-icons/fi";
 import { Container, ButtonsGroup, Button, LabelItem } from './ItemTodoStyles'
 
 const InputTodoEdit = ({item, editItemTitleFromTodoList, onClickItemTodoListToggleDone, deleteItemFromTodoList}) => {
@@ -22,21 +21,21 @@ const InputTodoEdit = ({item, editItemTitleFromTodoList, onClickItemTodoListTogg
   }
 
   return (
-    <Container>
+    <Container className={item.done ? 'done' : ''}>
       {onEdit ?
         <LabelItem className="tt-wrap-input-button-edit">
           <input type="text" value={inputTodoEdit} onChange={(e) => onChangeInputTodoEdit(e)}/>
           <button className="tt-btn-ok-edit"
                   type="button" onClick={(e) => onClickButtonTodoEdit(item, e)}>
-                  <FaCheck size={24} />
+                  <FiCheck size={20} />
           </button>
         </LabelItem>
         :
-        <LabelItem>
-          <span
-            onClick={(e) => {onClickItemTodoListToggleDone(item, e)}}>
+        <LabelItem onClick={(e) => {onClickItemTodoListToggleDone(item, e)}}>
+          {item.done ? <FiCheckSquare size={20}/> : <FiSquare size={20}/>}
+          <label>
               {item.title}
-          </span>
+          </label>
         </LabelItem>
       }
       <ButtonsGroup>

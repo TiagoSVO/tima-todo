@@ -27,9 +27,13 @@ export const Container = styled.li`
     padding: 0 10px;
     font-size: 0.9em;
     
-    &.done {
+    &.done div:first-child {
         text-decoration: line-through;
         color: ${(props) => props.theme.colors.default};
+    }
+
+    input[type="text"] {
+        border: none;
     }
 `
 
@@ -37,6 +41,7 @@ export const ButtonsGroup = styled.div`
     display: flex;
     flex-direction: row;
     gap: 5px;
+    text-decoration: none;
 `
 
 export const Button = styled.button`
@@ -65,4 +70,9 @@ export const Button = styled.button`
 export const LabelItem = styled.div`
     display: flex;
     min-width: 50%;
+    gap: 10px;
+    cursor: pointer;
+    label, svg {
+        cursor: pointer;
+    }
 `
